@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
-  name: npm-install
+  name: npm
 spec:
   steps:
     - name: install
@@ -12,7 +12,7 @@ spec:
 apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
-  name: jasmine-test
+  name: Jasmine
 spec:
   steps:
     - name: run-tests

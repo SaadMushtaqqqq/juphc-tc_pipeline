@@ -8,7 +8,7 @@ spec:
   tasks:
     - name: npminstall
       taskRef:
-        name: npm-install
+        name: npm
       workspaces:
         - name: source
           workspace: pipeline-workspace
@@ -16,7 +16,7 @@ spec:
       runAfter:
         - npminstall
       taskRef:
-        name: jasmine-test
+        name: Jasmine
       workspaces:
         - name: source
           workspace: pipeline-workspace
